@@ -1,7 +1,6 @@
 # 📊 MECE Table – Project Task Allocation
 
-## 🔹 Section A: For the given data write and run regex in your jupyter notebook to
-answer the following questions. Mention your answers clearly. (60%)
+## 🔹 Section A: For the given data write and run regex in your jupyter notebook to answer the following questions. Mention your answers clearly. (60%)
 
 | **Question** | **Assigned To** |
 |--------------|------------------|
