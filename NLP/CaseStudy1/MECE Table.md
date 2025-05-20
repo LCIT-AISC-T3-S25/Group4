@@ -13,19 +13,17 @@ answer the following questions. Mention your answers clearly. (60%)
 | Q6  What is the total number of ip addresses across all the records?         | Pranay           |
 | Q7  How many records have a new line?         | Nidhi            |
 | Q8  What is the total number of hashtags across all these tweets?         | Smit             |
-| Q9  What is the code to substitute all non-alphanumeric characters
-with a new line?         | Nithish          |
+| Q9  What is the code to substitute all non-alphanumeric characters with a new line?         | Nithish          |
 | Q10  What is the total number of URLs across all tweets?        | Taran            |
 
 ---
 
-## 🔹 Section B: Paired Assignments
+## 🔹 Section B: Perform stemming and lemmatization (40%)
 
-Each question is assigned to a pair of individuals (Exhaustive but not overlapping within the row).
 
 | **Question** | **Assigned Team**   |
 |--------------|---------------------|
-| Q1           | Kabir / Taran       |
-| Q2           | Dhruv / Aravind     |
-| Q3           | Smit / Preet        |
-| Q4           | Nidhi / Aesha       |
+| Q1  Use porter stemmer to run stemming. Count the number of uniquewords/tokens before and after stemming         | Kabir / Taran       |
+| Q2  Perform lemmatization using NLTK lemmatizer. Count the number of unique words/tokens before and after lemmatization       | Dhruv / Aravind     |
+| Q3  Compare the change in word frequencies from stemming and lemmatization. Which are the top 10 words after stemming/lemmatization         | Smit / Preet        |
+| Q4  What is the change in word frequencies if normalization is done after stop word removal.        | Nidhi / Aesha       |
