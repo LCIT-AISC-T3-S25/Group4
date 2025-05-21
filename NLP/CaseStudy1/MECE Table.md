@@ -13,7 +13,7 @@
 | Q7. How many records have a new line?                                               | Nidhi           | *"In pandas, use `str.contains('\n')` to count records that include newline characters."*                                           | *(e.g., 18 records)*                                 |
 | Q8. What is the total number of hashtags across all these tweets?                   | Smit            | *"Use regex `#\w+` to extract all hashtags in pandas column and sum total across all records."*                                     | *(e.g., 412 hashtags)*                               |
 | Q9. What is the code to substitute all non-alphanumeric characters with a new line? | Nithish         | *"Use `re.sub(r'[^A-Za-z0-9]', '\\n', text)` to replace non-alphanumeric characters with newline."*                                 | `re.sub(r'[^A-Za-z0-9]', '\n', text)`                |
-| Q10. What is the total number of URLs across all tweets?                            | Taran           | *"Use regex `http[s]?://\S+` or `www\.\S+` to extract and count total URLs in dataset."*                                            | *(e.g., 132 URLs)*                                   |
+| Q10. What is the total number of URLs across all tweets?                            | Taran           | *"Use regex `http[s]?://\S+` or `www\.\S+` to extract and count total URLs in dataset."*                                            | *4 URLs*                                   |
 
 ---
 
