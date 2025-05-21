@@ -11,7 +11,7 @@
 | Q5. How many records contain a decimal number?                                      | Aesha           | *"Use regex in pandas to match decimal numbers like '3.14' or '0.99' using pattern `\d+\.\d+`."*                                    |
 | Q6. What is the total number of IP addresses across all the records?                | Pranay          | *"Use regex to extract all IPv4 patterns `\b\d{1,3}(\.\d{1,3}){3}\b` and count total matches across dataframe."*                    |
 | Q7. How many records have a new line?                                               | Nidhi           | *"How to find how many records have a new line using pandas, and explain all steps in detail."*                                           |
-| Q8. What is the total number of hashtags across all these tweets?                   | Smit            | *"How can I count how many hashtags in my excel file."*                                     |
+| Q8. What is the total number of hashtags across all these tweets?                   | Smit            | *"How can I count how many hashtags in my excel file. How can I count only unique hashtags"*                                     |
 | Q9. What is the code to substitute all non-alphanumeric characters with a new line? | Nithish         | *"Use `re.sub(r'[^A-Za-z0-9]', '\\n', text)` to replace non-alphanumeric characters with newline."*                                 |
 | Q10. What is the total number of URLs across all tweets?                            | Taran           | *"Use regex `http[s]?://\S+` or `www\.\S+` to extract and count total URLs in dataset."*                                            |
 
