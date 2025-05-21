@@ -13,7 +13,8 @@
 | Q7. How many records have a new line?                                               | Nidhi           | *"How to find how many records have a new line using pandas, and explain all steps in detail."*                                           |
 | Q8. What is the total number of hashtags across all these tweets?                   | Smit            | *"How can I count how many hashtags in my excel file. How can I count only unique hashtags"*                                     |
 | Q9. What is the code to substitute all non-alphanumeric characters with a new line? | Nithish         | *"Use `re.sub(r'[^A-Za-z0-9]', '\\n', text)` to replace non-alphanumeric characters with newline."*                                 |
-| Q10. What is the total number of URLs across all tweets?                            | Taran           | *"Use regex `http[s]?://\S+` or `www\.\S+` to extract and count total URLs in dataset."*                                            |
+| Q10. What is the total number of URLs across all tweets?                            | Taran           | *"How to clean text data by converting to lowercase and removing extra whitespace using pandas? & what is the regex used for url?
+"*                                            |
 
 ---
 
@@ -22,7 +23,8 @@
 
 | **Question**                                                                                                                         | **Assigned Team** | **LLM Prompt Used**                                                                                                                  |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Q1. Use Porter Stemmer to run stemming. Count the number of unique words/tokens before and after stemming.                           | Kabir / Taran     | *"Using NLTK's PorterStemmer, tokenize text from CSV, count unique tokens before and after stemming using sets."*                    |
+| Q1. Use Porter Stemmer to run stemming. Count the number of unique words/tokens before and after stemming.                           | Kabir / Taran     | *"Taranjot :- How to tokenize text data ? & How can I perform Stemming on the list of tokens? 
+Kabir :- How to count the number of unique words in a pandas ? & What is the use of explode in stemming?"*                    |
 | Q2. Perform lemmatization using NLTK lemmatizer. Count the number of unique words/tokens before and after lemmatization.             | Dhruv / Aravind   | *"Aravind - How do i initialize both stemmer and lemmatizer and set the data path manually for customer nltk_data, how can i manualy download the punkt tokeniker, how can i tokenize each row using nltk word tokenize funtion. Dhurv - how can i apply nltk word lematizer to each token in pandas column, how do i count the number of unique words before and after lemmatization"*                      |
 | Q3. Compare the change in word frequencies from stemming and lemmatization. Which are the top 10 words after stemming/lemmatization? | Smit / Preet      | *"I want to count word frequencies from stemming and want to print it. last:And also I want for Lemmatization."* |
 | Q4. What is the change in word frequencies if normalization is done after stop word removal?                                         | Nidhi / Aesha     | *"Nidhi - What is the change in word frequencies normalization is done after stop word removal and  how can i implatement this in pandas. Aesha -"* |
