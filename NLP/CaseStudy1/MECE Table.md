@@ -1,4 +1,4 @@
-# 📊 MECE Table – Project Task Allocation
+# 📊 Project Task Allocation
 
 ## 🔹 Section A: For the given data write and run regex in your jupyter notebook to answer the following questions. Mention your answers clearly. (60%)
 
