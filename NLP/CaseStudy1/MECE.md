@@ -4,8 +4,7 @@
 
 | **Question** | **Result** |**LLM Prompt** |**Assigned To** |
 |--------------|------------------|
-| Q1   How many records have a date that is expressed without usingalphabets? |0|   |"How can I count how many records in a pandas column have dates formatted like dd/mm/yyyy or yyyy-mm-dd without any alphabets?"
-"Give me a regular expression to match dates written as numbers only, like dd/mm/yyyy or yyyy-mm-dd, in a pandas Series."|     | Aravind          |
+| Q1   How many records have a date that is expressed without usingalphabets? |0|   | Aravind          |
 | Q2  How many records have a word starting with the letter “w”?         | Dhruv            |
 | Q3  How many records make a word that starts with an alphabet andis not a URL?         | Kabir            |
 | Q4  How many tweets contain one of these emojis :), :D, ;), :P?         | Preet            |
