@@ -1,4 +1,4 @@
-# 📊 Project Task Allocation
+# 📊 MECE Table
 
 ## 🔹 Section A: For the given data write and run regex in your jupyter notebook to answer the following questions. Mention your answers clearly. (60%)
 
@@ -20,9 +20,10 @@
 ## 🔹 Section B: Perform stemming and lemmatization (40%)
 
 
-| **Question** | **Assigned Team**   |
-|--------------|---------------------|
-| Q1  Use porter stemmer to run stemming. Count the number of uniquewords/tokens before and after stemming         | Kabir / Taran       |
-| Q2  Perform lemmatization using NLTK lemmatizer. Count the number of unique words/tokens before and after lemmatization       | Dhruv / Aravind     |
-| Q3  Compare the change in word frequencies from stemming and lemmatization. Which are the top 10 words after stemming/lemmatization         | Smit / Preet        |
-| Q4  What is the change in word frequencies if normalization is done after stop word removal.        | Nidhi / Aesha       |
+| **Question**                                                                                                                         | **Assigned Team** | **LLM Prompt Used**                                                                                                                  | **Result**                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| Q1. Use Porter Stemmer to run stemming. Count the number of unique words/tokens before and after stemming.                           | Kabir / Taran     | *"Using NLTK's `PorterStemmer`, tokenize text from CSV, count unique tokens before and after stemming using sets."*                  | *(e.g., Before: 2951, After: 1834)*                                                    |
+| Q2. Perform lemmatization using NLTK lemmatizer. Count the number of unique words/tokens before and after lemmatization.             | Dhruv / Aravind   | *"Use NLTK’s WordNetLemmatizer. Tokenize, lemmatize each word, and compare unique word count before vs after."*                      | *(e.g., Before: 2951, After: 2308)*                                                    |
+| Q3. Compare the change in word frequencies from stemming and lemmatization. Which are the top 10 words after stemming/lemmatization? | Smit / Preet      | *"Create two frequency dictionaries—one for PorterStemmer and one for WordNetLemmatizer—and list top 10 frequent words after each."* | *(e.g., Stemming: \['run', 'play', ...], Lemmatization: \['running', 'playing', ...])* |
+| Q4. What is the change in word frequencies if normalization is done after stop word removal?                                         | Nidhi / Aesha     | *"Remove stop words using NLTK, then lowercase and normalize remaining words. Count frequency before and after normalization."*      | *(e.g., Before normalization: {'Play': 45}, After: {'play': 60})*                      |
+
