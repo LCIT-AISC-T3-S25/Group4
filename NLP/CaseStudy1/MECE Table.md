@@ -23,13 +23,6 @@
 | **Question**                                                                                                                         | **Assigned Team** | **LLM Prompt Used**                                                                                                                  |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | Q1. Use Porter Stemmer to run stemming. Count the number of unique words/tokens before and after stemming.                           | Kabir / Taran     | *"Using NLTK's PorterStemmer, tokenize text from CSV, count unique tokens before and after stemming using sets."*                    |
-| Q2. Perform lemmatization using NLTK lemmatizer. Count the number of unique words/tokens before and after lemmatization.             | Dhruv / Aravind   | *Aravind -
-How do i initialize both stemmer and lemmatizer and set the data path manually for customer nltk_data.
-how can i manualy download the punkt tokeniker
-how can i tokenize each row using nltk word tokenize funtion
-Dhruv -
-how can i apply nltk word lematizer to each token in pandas column
-how do i count the number of unique words before and after lemmatization*                      |
+| Q2. Perform lemmatization using NLTK lemmatizer. Count the number of unique words/tokens before and after lemmatization.             | Dhruv / Aravind   | *"Aravind - How do i initialize both stemmer and lemmatizer and set the data path manually for customer nltk_data, how can i manualy download the punkt tokeniker, how can i tokenize each row using nltk word tokenize funtion. Dhurv - how can i apply nltk word lematizer to each token in pandas column, how do i count the number of unique words before and after lemmatization"*                      |
 | Q3. Compare the change in word frequencies from stemming and lemmatization. Which are the top 10 words after stemming/lemmatization? | Smit / Preet      | *"Create two frequency dictionaries—one for PorterStemmer and one for WordNetLemmatizer—and list top 10 frequent words after each."* |
 | Q4. What is the change in word frequencies if normalization is done after stop word removal?                                         | Nidhi / Aesha     | *"Remove stop words using NLTK, then lowercase and normalize remaining words. Count frequency before and after normalization."*      |
-
