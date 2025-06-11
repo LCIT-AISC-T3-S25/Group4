@@ -1,0 +1,13 @@
+
+FROM python:3.8-slim
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY tokenizer.pickle .
+COPY models/lstm_sentiment_model.h5 models/
+COPY app_lstm.py .
+
+EXPOSE 5000
+CMD ["python", "app_lstm.py"]

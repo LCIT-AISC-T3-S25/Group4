@@ -1,0 +1,12 @@
+FROM python:3.8-slim
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY tokenizer.pickle .
+COPY models/DeepBidirectionalGRU.h5 models/
+COPY app_gru.py .
+
+EXPOSE 5000
+CMD ["python", "app_gru.py"]
