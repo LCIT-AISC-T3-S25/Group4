@@ -26,7 +26,7 @@ jobs:
       - name: Run tests
         working-directory: ./Deployment/CaseStudy1
         run: |
-          python -m pytest test_gru.py test_lstm.py -v
+          python -m pytest app_gru.py app_lstm.py -v
 
   docker-build:
     needs: test
