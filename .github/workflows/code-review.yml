@@ -1,0 +1,50 @@
+name: Code Review Checklist
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+    branches: [test]
+
+jobs:
+  checklist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v5
+        with:
+          script: |
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.number,
+            });
+
+            // Check for prohibited files in test branch
+            const prohibited = files.some(file => 
+              file.filename.endsWith('.ipynb')
+            );
+
+            if (prohibited) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.number,
+                body: '🚫 **Code Review Alert**: This PR contains model code or notebooks which are not allowed in the test branch!'
+              });
+            }
+
+            // Check for required files
+            const hasDocker = files.some(file => 
+              file.filename.includes('dockerfile.')
+            );
+            const hasApp = files.some(file => 
+              file.filename.includes('app_') && file.filename.endsWith('.py')
+            );
+
+            if (!hasDocker || !hasApp) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.number,
+                body: '🔍 **Review Note**: Make sure your deployment PR includes both application code and Docker configuration'
+              });
+            }
