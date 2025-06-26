@@ -36,19 +36,27 @@ Then open http://localhost:5000 in your browser.
 
 ### LSTM Model – Sentiment Analysis with LIME
 
-![LSTM Output]()
+![LSTM Output](https://github.com/user-attachments/assets/ca1bc91b-782f-4e7b-ab70-e0f87b329481)
 
 ### CNN Model – Prediction UI
 
-![CNN Output]()
+![CNN Output1](https://github.com/user-attachments/assets/5328a7c6-ce4e-4baa-bba8-963a591131b1)
+![CNN Output2](https://github.com/user-attachments/assets/9aece31f-8d7d-4b92-9994-596c90ab114d)
 
-### VGG Model – Classification Results
+### Transfer Learning Deployment with VGG Model – Classification Results
 
-![VGG Output]()
+![VGG Output1](https://github.com/user-attachments/assets/77db77a0-6c48-4174-bdd7-d225405a4830)
+![VGG Output2](https://github.com/user-attachments/assets/48271e9f-d304-492e-92d4-2274222f3780)
 
-### Transfer Learning Deployment – Interface Overview
+## SonarQube
 
-![Transfer Learning Output]()
+![Before](https://github.com/user-attachments/assets/cac6dcf9-f57c-4df1-9c36-b25b6dbda1cd)
+![After](https://github.com/user-attachments/assets/ee5b6320-057a-49b4-bc62-a878471eac3f)
+
+## VM (Virtual Machine)
+
+![Output1](https://github.com/user-attachments/assets/a5f380e4-f1f3-4078-add9-cd753576c9bd)
+![Output2](https://github.com/user-attachments/assets/83af70ea-40a1-471e-8848-e1c2f12fb2a6)
 
 ---
 
