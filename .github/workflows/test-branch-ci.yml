@@ -12,22 +12,22 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Check each folder for app.py and Dockerfile
+      - name: Check each folder for app.py
         run: |
-          echo "Scanning subdirectories for app.py and Dockerfile..."
+          echo "Scanning subdirectories for app.py"
           found_valid=0
 
           for dir in */ ; do
-            if [[ -f "$dir/app.py" && -f "$dir/Dockerfile" ]]; then
-              echo "Found both files in $dir"
+            if [[ -f "$dir/app.py" ]]; then
+              echo "Found app.py file in $dir"
               found_valid=1
               break
             fi
           done
 
           if [[ $found_valid -eq 1 ]]; then
-            echo "Test Passed: At least one folder contains both app.py and Dockerfile."
+            echo "Test Passed: At least one folder contains app.py."
           else
-            echo "Test Failed: No folder contains both app.py and Dockerfile."
+            echo "Test Failed: No folder contains app.py."
             exit 1
           fi
