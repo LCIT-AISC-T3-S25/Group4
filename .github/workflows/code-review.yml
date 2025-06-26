@@ -28,7 +28,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.payload.number,
-                body: '🚫 **Code Review Alert**: This PR contains model code or notebooks which are not allowed in the test branch!'
+                body: '**Code Review Alert**: This PR contains model code or notebooks which are not allowed in the test branch!'
               });
             }
 
@@ -45,6 +45,6 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.payload.number,
-                body: '🔍 **Review Note**: Make sure your deployment PR includes both application code and Docker configuration'
+                body: '**Review Note**: Make sure your deployment PR includes both application code and Docker configuration'
               });
             }
