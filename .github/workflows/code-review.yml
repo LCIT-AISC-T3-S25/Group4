@@ -33,9 +33,6 @@ jobs:
             }
 
             // Check for required files
-            const hasDocker = files.some(file => 
-              file.filename.includes('dockerfile.')
-            );
             const hasApp = files.some(file => 
               file.filename.includes('app_') && file.filename.endsWith('.py')
             );
