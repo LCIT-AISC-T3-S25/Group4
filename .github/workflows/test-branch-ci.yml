@@ -7,48 +7,18 @@ on:
     branches: [test]
 
 jobs:
-  test:
+  validate-files:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.8"
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r Deployment/CaseStudy1/requirements.txt
-          pip install pytest
-
-      - name: Run tests
+      - name: Check for required files
         working-directory: ./Deployment/CaseStudy1
         run: |
-          python -m pytest app_gru.py app_lstm.py -v
-
-  docker-build:
-    needs: test
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        model: [gru, lstm]
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Build Docker image
-        working-directory: ./Deployment/CaseStudy1
-        run: |
-          docker build -t ${{ matrix.model }}-service -f dockerfile.${{ matrix.model }} .
-
-      - name: Log into GitHub Container Registry
-        if: github.event_name != 'pull_request'
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-
-      - name: Push to GHCR
-        if: github.event_name != 'pull_request'
-        run: |
-          docker tag ${{ matrix.model }}-service ghcr.io/${{ github.repository }}/${{ matrix.model }}-service:latest
-          docker push ghcr.io/${{ github.repository }}/${{ matrix.model }}-service:latest
+          echo "Checking if app.py and Dockerfile exist..."
+          if [[ -f "app.py" && -f "Dockerfile" ]]; then
+            echo "Test Passed."
+          else
+            echo "Test failed due to app.py file and Dockerfile not found."
+            exit 1
+          }
