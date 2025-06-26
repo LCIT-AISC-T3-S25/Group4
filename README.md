@@ -65,7 +65,7 @@ Then open http://localhost:5000 in your browser.
 - Aesha Savani
 - Dhruv Boricha
 - Aravind Seenivasan
-- Taranjot Bindra
+- Taranjot Singh Bindra
 - Kabir Pithadiya
 - Nidhi Chakarani
 - Sai Pranay
