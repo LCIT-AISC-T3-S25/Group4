@@ -36,17 +36,17 @@ Then open http://localhost:5000 in your browser.
 
 ### LSTM Model – Sentiment Analysis with LIME
 
-![LSTM Output](https://github.com/user-attachments/assets/ca1bc91b-782f-4e7b-ab70-e0f87b329481)
+![LSTM Output](https://github.com/user-attachments/assets/ff50ed11-254e-4f7b-95de-01ad73de5c73)
 
 ### CNN Model – Prediction UI
 
-![CNN Output1](https://github.com/user-attachments/assets/5328a7c6-ce4e-4baa-bba8-963a591131b1)
-![CNN Output2](https://github.com/user-attachments/assets/9aece31f-8d7d-4b92-9994-596c90ab114d)
+![CNN Output1](https://github.com/user-attachments/assets/cfa18d4e-3558-40de-94a5-6e3f65394185)
+![CNN Output2](https://github.com/user-attachments/assets/8d57a501-e39b-45f2-9c5c-37c0677ee6e2)
 
 ### Transfer Learning Deployment with VGG Model – Classification Results
 
-![VGG Output1](https://github.com/user-attachments/assets/77db77a0-6c48-4174-bdd7-d225405a4830)
-![VGG Output2](https://github.com/user-attachments/assets/48271e9f-d304-492e-92d4-2274222f3780)
+![VGG Output1](https://github.com/user-attachments/assets/60f972ff-bb82-4bdf-b0f4-8d41bc60f378)
+![VGG Output2](https://github.com/user-attachments/assets/b02fc75c-42c7-412a-a8e7-ecaf8222e1fd)
 
 ## SonarQube
 
