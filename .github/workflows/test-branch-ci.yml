@@ -12,13 +12,22 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Check for required files
-        working-directory: ./Deployment/CaseStudy1
+      - name: Check each folder for app.py and Dockerfile
         run: |
-          echo "Checking if app.py and Dockerfile exist..."
-          if [[ -f "app.py" && -f "Dockerfile" ]]; then
-            echo "Test Passed."
+          echo "Scanning subdirectories for app.py and Dockerfile..."
+          found_valid=0
+
+          for dir in */ ; do
+            if [[ -f "$dir/app.py" && -f "$dir/Dockerfile" ]]; then
+              echo "Found both files in $dir"
+              found_valid=1
+              break
+            fi
+          done
+
+          if [[ $found_valid -eq 1 ]]; then
+            echo "Test Passed: At least one folder contains both app.py and Dockerfile."
           else
-            echo "Test failed due to app.py file and Dockerfile not found."
+            echo "Test Failed: No folder contains both app.py and Dockerfile."
             exit 1
-          }
+          fi
