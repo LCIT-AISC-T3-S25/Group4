@@ -1,0 +1,6 @@
+flask
+tensorflow==2.8.0
+numpy
+pickle5
+lime
+protobuf==3.20.*
