@@ -40,23 +40,23 @@ Then open http://localhost:5000 in your browser.
 
 ### CNN Model – Prediction UI
 
-![CNN Output1](https://github.com/user-attachments/assets/cfa18d4e-3558-40de-94a5-6e3f65394185)
-![CNN Output2](https://github.com/user-attachments/assets/8d57a501-e39b-45f2-9c5c-37c0677ee6e2)
+![CNN Output1](https://github.com/user-attachments/assets/266e843e-6497-4c8e-8dce-3841eecc650f)
+![CNN Output2](https://github.com/user-attachments/assets/b5e2692a-fa7f-4510-a8d6-de7080a9b163)
 
 ### Transfer Learning Deployment with VGG Model – Classification Results
 
-![VGG Output1](https://github.com/user-attachments/assets/60f972ff-bb82-4bdf-b0f4-8d41bc60f378)
-![VGG Output2](https://github.com/user-attachments/assets/b02fc75c-42c7-412a-a8e7-ecaf8222e1fd)
+![VGG Output1](https://github.com/user-attachments/assets/90850df2-3c6c-4364-81f6-b973fac47913)
+![VGG Output2](https://github.com/user-attachments/assets/f507eeeb-e75d-41c4-9f88-08c89689bca2)
 
 ## SonarQube
 
-![Before](https://github.com/user-attachments/assets/cac6dcf9-f57c-4df1-9c36-b25b6dbda1cd)
-![After](https://github.com/user-attachments/assets/ee5b6320-057a-49b4-bc62-a878471eac3f)
+![Before](https://github.com/user-attachments/assets/e20aa9db-106c-48aa-b396-2196e82fdfb7)
+![After](https://github.com/user-attachments/assets/57de29d5-3a83-4ea5-9c36-ca3e5653fe1c)
 
 ## VM (Virtual Machine)
 
-![Output1](https://github.com/user-attachments/assets/a5f380e4-f1f3-4078-add9-cd753576c9bd)
-![Output2](https://github.com/user-attachments/assets/83af70ea-40a1-471e-8848-e1c2f12fb2a6)
+![Output1](https://github.com/user-attachments/assets/146c7a88-b9aa-42e5-91a0-e230d9ef56f1)
+![Output2](https://github.com/user-attachments/assets/aed457de-1bc3-4aac-a0a2-c387b8bb83c3)
 
 ---
 
