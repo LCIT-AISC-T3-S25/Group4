@@ -18,7 +18,52 @@
           <input type="radio" name="model" value="lstm" {% if selected_model == 'lstm' %}checked{% endif %}> LSTM
           <input type="radio" name="model" value="gru" {% if selected_model == 'gru' %}checked{% endif %}> GRU
         </div>
+      </div><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tweet Sentiment Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Tweet Sentiment Analyzer</h1>
+
+    <form method="POST">
+      <textarea name="tweet" rows="4" placeholder="Type your tweet here...">{{ tweet }}</textarea>
+
+      <div class="model-options">
+        <span>Select Model:</span>
+        <div class="radio-group">
+          <label for="lstm">
+            <input type="radio" id="lstm" name="model" value="lstm" {% if selected_model == 'lstm' %}checked{% endif %}> LSTM
+          </label>
+          <label for="gru">
+            <input type="radio" id="gru" name="model" value="gru" {% if selected_model == 'gru' %}checked{% endif %}> GRU
+          </label>
+        </div>
       </div>
+
+      <button type="submit">Analyze</button>
+    </form>
+
+    {% if sentiment %}
+      <div class="result">
+        <h3>Predicted Sentiment:</h3>
+        <p><strong>{{ sentiment }}</strong></p>
+      </div>
+    {% endif %}
+
+    {% if lime_html %}
+      <div class="lime">
+        <h3>LIME Explanation:</h3>
+        {{ lime_html | safe }}
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
+
 
       <button type="submit">Analyze</button>
     </form>
