@@ -1,3 +1,4 @@
 # Ignore large dataset folder
 data/balanced_labeled_photos/
 ./ipynb_checkpoints/
+CV/Assignment3/balanced_labeled_photos/
