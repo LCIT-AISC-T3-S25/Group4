@@ -1,0 +1,17 @@
+# Step 1: Use a Python 3.10 base image
+FROM python:3.10-slim
+
+# Step 2: Set the working directory to /app in the container
+WORKDIR /app
+
+# Step 3: Copy all files from the local directory to the container
+COPY . /app
+
+# Step 4: Install the dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Step 5: Expose the port on which the app will run
+EXPOSE 5000
+
+# Step 6: Set the default command to run the app
+CMD ["python", "app.py"]
