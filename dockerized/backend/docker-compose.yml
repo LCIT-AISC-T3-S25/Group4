@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app/app   # Optional: for live code reload during development
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1       # Ensures real-time logs in container
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    environment:
+      - API_URL=http://backend:8000   # Backend URL accessible within docker network
+      - PYTHONUNBUFFERED=1             # Optional: for better logging
+    restart: always
