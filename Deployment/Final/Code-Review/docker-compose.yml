@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./gan_image_gen
+    container_name: gan_backend
+    ports:
+      - "8000:8000"
+
+  ui:
+    build: ./gan_image_gen/ui
+    container_name: gan_ui
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
