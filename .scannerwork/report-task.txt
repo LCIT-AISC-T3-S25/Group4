@@ -2,5 +2,5 @@ projectKey=Group4
 serverUrl=http://localhost:9000
 serverVersion=25.7.0.110598
 dashboardUrl=http://localhost:9000/dashboard?id=Group4
-ceTaskId=d21a4e4b-b068-431f-94ac-2147623f36ae
-ceTaskUrl=http://localhost:9000/api/ce/task?id=d21a4e4b-b068-431f-94ac-2147623f36ae
+ceTaskId=afffb2f3-c202-4a5c-b0c5-ac3e7bcc73e2
+ceTaskUrl=http://localhost:9000/api/ce/task?id=afffb2f3-c202-4a5c-b0c5-ac3e7bcc73e2
